@@ -1,0 +1,217 @@
+#bodyStyle {
+    display:flex;
+    justify-content:center;
+    height:150vh;
+    font-family:Arial, sans-serif;
+    background-image: url(/images/r1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container {
+    border:2px solid #7c7575;
+    display:flex;
+    padding:40px 30px 0px 45px;
+    border-radius:8px;
+    box-shadow: 0 7px 9px #7c75;
+    display: inline;
+}
+#mainBody {
+    margin-bottom: 0px;
+}
+#mainHeading {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+#subHeading {
+    font-size:20px;
+    margin-top:10px;
+    text-align: center;
+}
+#personalIngformationHeading {
+    font-size:20px;
+    font-weight: 300;
+    text-align: left;
+    margin-top: 20px;
+}
+.coloumnName {
+    display: flex;
+    column-gap:100px;
+}
+.columnFirstName input[type=text] {
+    position:relative;
+    height:25px;
+    width:100%;
+    margin-top:8px;
+    border-radius:45px;
+    padding-left:15px;
+}
+.columnSecondName input[type=text] {
+    position:relative;
+    height:25px;
+    width:100%;
+    margin-top:8px;
+    border-radius:45px;
+    padding-left:15px;
+}
+.dateofBirthGenderSection {
+    margin-top: 20px;
+    display: flex;
+    column-gap:90px;
+}
+#dateOfBirth {
+    position:relative;
+    height:25px;
+    width:100%;
+    margin-top:8px;
+    border-radius:45px;
+    padding-left:15px;
+}
+.subColumn {
+    display: flex;
+    column-gap: 30px;
+}
+.genderColumn input[type="radio"]{
+    margin-top: 10px;
+    width:30px;
+    height:30px;  
+    vertical-align:middle;
+}
+#contactInformationHeading {
+    font-size:20px;
+    font-weight: 300;
+    text-align: left;
+}
+.contactInformationSection {
+    display: flex;
+    column-gap:90px;
+}
+.phoneNumberSection input[type=text] {
+    position:relative;
+    height:25px;
+    width:100%;
+    margin-top:8px;
+    border-radius:45px;
+    padding-left:15px;
+    padding-right: 0px;
+}
+.emailSection input[type=email] {
+    position:relative;
+    height:25px;
+    width:100%;
+    margin-top:8px;
+    border-radius:45px;
+    padding-left:15px;
+    padding-right: 25px;
+}
+#addressSectionHeading {
+    font-size:20px;
+    font-weight: 300;
+    text-align: left;
+}
+.addressSection {
+    display:flex;
+    column-gap: 30px;
+}
+#addresscontent {
+    font-size: 10px;;
+}
+.stateCitySection {
+    margin-top:20px;
+    display:flex;
+    column-gap: 200px;
+}
+.stateCitySection select {
+    width:200px;
+    height:25px;
+}
+#accountInformationHeading {
+    font-size:20px;
+    font-weight: 300;
+    text-align: left;
+    margin-top: 30px;
+}
+.userNameSection input[type=text]{
+    position:relative;
+    height:25px;
+    width:200px;
+    border-radius:45px;
+    padding-left:15px;
+    padding-right: 25px;
+}
+.userNameSection {
+    margin-top: 20px;
+    display:flex;
+    column-gap: 50px;
+}
+.passwordSection input[type=password] {
+    position:relative;
+    height:25px;
+    width:200px;
+    border-radius:45px;
+    padding-left:15px;
+    padding-right: 25px;
+}
+.passwordSection {
+    margin-top: 20px;
+    display:flex;
+    column-gap:5px;
+}
+.buttonSection {
+    margin-top: 20px;
+    display:flex;
+    column-gap: 450px;
+}
+#backButton {
+    text-align: center;
+    background-image: linear-gradient(to bottom right,rgb(250, 217, 217), rgb(243, 243, 105));
+    width:120px;
+    height:50px;
+    font-size: 15px;
+    border-radius: 10px;
+    font-weight: 400;
+}
+#backButton:hover {
+    background-color: rgb(172, 236, 172);
+}
+#signUpButton {
+    text-align: center;
+    background-image: linear-gradient(to bottom right,rgb(250, 217, 217),  rgb(243, 243, 105));
+    width:120px;
+    height:50px;
+    font-size: 15px;
+    border-radius: 10px;
+    font-weight: 400;
+}
+#signUpButton:hover {
+    background-image:linear-gradient(to bottom right,rgb(245, 188, 188) ,rgb(146, 233, 146));
+}
+#backButton:hover {
+    background-image:linear-gradient(to bottom right,rgb(245, 188, 188) ,rgb(146, 233, 146));
+}
+#logInComment {
+    text-align: centre;
+    margin:20px;
+    padding-left:200px;
+}
+#logInLink {
+    text-decoration: none;
+}
+#logInLink:hover {
+    text-decoration:underline;
+}
+.error {
+    margin-top: 10px;
+    color: red;
+    font-size: 0.9em;
+    display: none;
+}
+#matchMessage {
+    margin-top: 10px;
+    color: blue;
+    font-size: 0.9em;
+    display: none;
+}
+
+
+

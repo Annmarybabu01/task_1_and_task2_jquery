@@ -1,0 +1,118 @@
+#bodyStyle {
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    height:100vh;
+    font-family:Arial, sans-serif;
+    background-image: url(/images/b2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container {
+    border:2px solid #7c7575;
+    display:flex;
+    column-gap:40px;
+    padding-right:40px;
+    border-radius:8px;
+    box-shadow: 0 7px 9px #7c75; 
+}
+#welcomeHeading {
+    text-align: centre;
+    font-weight: bold;
+    font-size:40px;
+    margin-left: 20px;
+    margin-top: 40px;
+}
+#loginHeading {
+    text-align: centre;
+    font-weight:400;
+    font-size:20px;
+    margin-left:70px;
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+.emailSection input {
+    height:25px;
+    width:100%;
+    margin-top:8px;
+    padding-left:15px;
+    border-radius: 10px;
+    margin-bottom:0px;
+}
+.emailSection label {
+    color:black;
+    font-weight:400;
+}
+.emailSection {
+    margin-top: 40px;
+    line-height: 0.7;
+    margin-bottom: 0px;
+}
+.passwordSection input {
+    height:25px;
+    width:100%;
+    margin-top:8px;
+    padding-left:15px;
+    border-radius: 10px;
+    margin-bottom: 0px;
+}
+.passwordSection {
+    margin-top: 20px;
+    line-height:0.7;
+}
+.optionSection {
+    margin-top: 30px;
+    display:flex;
+    column-gap:15px;
+    margin-bottom: 0px;
+}
+.forgotPassword {
+    margin-top:30px;
+    font-size: 15px;
+    text-align: right;
+}
+#forgotPasswordLink:active {
+    color: blue;
+}
+#forgotPasswordLink {
+    text-decoration: none;
+}
+.loginSection {
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+.loginSection button {
+    height:30px;
+    width:100%;
+    margin-top:8px;
+    border-radius:45px;
+    font-size: 15px;
+    background-color:#94f894;
+    margin-bottom:0px;
+    font-size:17px;
+    color:black;
+}
+.loginSection button:hover {
+    background-color:#7bf77b;
+}
+
+#signUpLink:active {
+    color: blue;
+}
+#signUpLink {
+    text-decoration: none;
+}
+.error {
+    margin-top: 10px;
+    color: red;
+    font-size: 0.9em;
+    display: none;
+}
+.signUp {
+    text-align: center;
+    margin-bottom:0px;
+}
+.rememberMeForgotPassword {
+    display:flex;
+    column-gap:100px;
+}

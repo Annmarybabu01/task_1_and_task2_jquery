@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registeration Page</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <link rel="stylesheet" href="registerationStyles.css"/>
+    </head>
+    <body id="bodyStyle">
+        <div class="container">
+            <div class="mainBody">
+            <header id="mainHeading">Create Your Account</header>
+            <header id="subHeading">Join us today and start your journey!</header>
+                <form>
+                    <div>
+                        <header id="personalIngformationHeading">Personal Information</header>
+                        <div class="coloumnName">
+                            <div class="columnFirstName">
+                                <label>First Name</label>
+                                <input type="text" id="firstName" name="firstName" placeholder="ann">
+                                <p class="error" id="firstNameErrorMessage">Please enter a name.</p>
+                            </div>
+                            <div class="columnSecondName">
+                                <label>Second Name</label>
+                                <input type="text" id="secondName" name="secondName" placeholder="babu">
+                                <p class="error" id="secondNameErrorMessage">Please enter a name.</p>
+                            </div>
+                        </div>
+                        <div class="dateofBirthGenderSection">
+                            <div class="dateOfBirthSection">
+                                <label>Date of Birth</label>
+                                <input type="date" id="dateOfBirth" name="dateOfBirth" onclick="setMaxDate()">
+                                <p class="error" id="dateOfBirthErrorMessage">Please enter a date and must be atleast 18 years old.</p>
+                            </div>
+                            <div class="genderColumn">
+                                <label>Gender</label>
+                                <div class="subColumn">
+                                    <div>
+                                        <input type="radio" id="male" name="gender" value="male"/>
+                                        <label>Male</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="female" name="gender" value="female"/>
+                                        <label>Female</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="other" name="gender" value="other"/>
+                                        <label>Other</label>
+                                    </div>
+                                </div>
+                                <p class="error" id="genderErrorMessage">Please choose your gender.</p>
+                        </div>
+                        </div>
+                    </div>
+                    <hr style="margin-top:20px;margin-right:15px;">
+                    <header id="contactInformationHeading">Contact Information</header>
+                    <div class="contactInformationSection">
+                        <div class="phoneNumberSection">
+                            <label>Phone Number</label>
+                            <input type="text" id="phoneNumber" name="phoneNumber" placeholder="+1(555)123-4567"/>
+                            <p class="error" id="phoneNumberErrorMessage">Please enter a valid phone number.</p>
+                        </div>
+                        <div class="emailSection">
+                            <label>Email</label>
+                            <input type="email" id="email" name="email" placeholder="abcd@gmail.com">
+                            <p class="error" id="emailErrorMessage">Please enter a valid  mail id.</p>
+                        </div>
+                    </div>
+                    <hr style="margin-top:20px;margin-right:15px;">
+                    <header id="addressSectionHeading">Address</header>
+                    <div class="addressSection">
+                        <div>
+                            <label>Address:</label>
+                        </div>
+                        <div>
+                            <textarea id="address" name="address" rows="4" cols="30" placeholder="Type addesss here"></textarea>
+                        </div>
+                        <p class="error" id="addressErrorMessage">Please enter a valid address.</p>
+                    </div>
+                        <div class="stateCitySection">
+                            <div class="stateSection">
+                                    <label>State: </label>
+                                    <select name="state" id="state">
+                                    <option value="">Select a state</option>
+                                    <option value="kerala">Kerala</option>
+                                    <option value="tamilnadu">Tamil Nadu</option>
+                                    </select>
+                            </div>
+                            <div class="citySection">
+                                    <labeL>City: </label>
+                                    <select id="city">
+                                        <option value="">Select a city</option>
+                                        <!-- Cities will be populated based on selected state -->
+                                    </select>
+                            </div>
+                        </div>
+                        <hr style="margin-top:20px;">
+                        <heading id="accountInformationHeading">Account Information</heading>
+                        <div class="userNameSection">
+                            <div>
+                            <label>Username:</label>
+                            </div>
+                            <div>
+                            <input type="text" id="userName" name="Username" placeholder="Ann_2002">
+                            <p class="error" id="userNameErrorMessage">Please enter a uername.</p>
+                            </div>
+                        </div>
+                        <div class="passwordSection">
+                            <div>
+                                <label>Password:</label>
+                                <input type="password" id="password" name="password" placeholder="Enter your password">
+                                <p class="error" id="passwordErrorMessage">Please enter a password.</p>
+                            </div>
+                            <div>
+                                <label>Confirm Password:</label>
+                                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Re-enter password">
+                                <p class="error" id="doNotMatchMessage">Password does not match</p>
+                                <p id="matchMessage">Password matched</p>
+                            </div>
+                        </div>
+                        <div class="buttonSection">
+                            <div id="backButtonSection">
+                                <button type="submit" id="backButton" value="back">Back</button>
+                            </div>
+                            <div id="signUpButtonSection">
+                                <button type="submit" id="signUpButton" value="signUp">Sign Up</button>
+                            </div>
+                        </div>
+                        <div id="logInComment">Already have an account? <a id="logInLink" href="login.html" target="_self">Log in</a></div>
+                </form>
+                </div>
+            </div>
+        <script src="registerationScript.js"></script>
+    </body>
+</html>

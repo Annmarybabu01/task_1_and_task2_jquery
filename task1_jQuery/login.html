@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login Page</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <link rel="stylesheet" href="loginStyles.css"/>
+    </head>
+    <body id="bodyStyle">
+        <div class="container">
+            <!--login Image-->
+            <div class="loginImageLeft">
+                <img src="/images/loginImage.jpg" style="height:470px;width:300px;display: block;" alt="login Image">
+            </div>
+            <!--Login entry side-->
+            <div class="mainBody">
+                <header id="welcomeHeading">Welcome Back!</header>
+                <header id="loginHeading">Login to your account</header>
+                <form>
+                    <div class="emailSection">
+                        <label>Email Address:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email">
+                        <span class="error" id="emailErrorMessage">Please enter a valid  mail id.</span>
+                    </div>
+                    <div class="passwordSection">
+                        <label>Password:</label>
+                        <input type="password" id="password" name="password" placeholder="Enter your password">
+                        <span class="error" id="passwordErrorMessage">Password not matched.</span>
+                    </div>
+                    <div class="rememberMeForgotPassword">
+                        <div class="optionSection">
+                            <div>
+                                <input type="checkbox" id="rememberMe" name="rememberMe" value="rememberMe">
+                            </div>
+                            <div>
+                                <label>Remember me</label><br> 
+                            </div>
+                        </div>
+                        <div class="forgotPassword">
+                                <a id="forgotPasswordLink" href="" target="_blank">Forgot Password?</a></p>
+                        </div>
+                    </div>
+                    <div class="loginSection">
+                        <button id="loginButton" type="button">Login</button>
+                    </div>
+                    <div class="signUp">
+                    <div>Don't have an account? <a id="signUpLink" href="registerationForm.html" target="_self">Sign Up</a></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script src="loginScript.js"></script>
+    </body>
+</html>
